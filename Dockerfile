@@ -7,6 +7,7 @@ RUN apt-get update &&\
         vim \
         less \
         locate \
+        sudo \
         &&\
         rm -rf /var/lib/apt/lists/*
 
