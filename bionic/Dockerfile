@@ -1,3 +1,4 @@
+# Docker build from Ubuntu Bionic 18.04
 FROM ubuntu:18.04
 LABEL maintainer="manuel@castellinconsulting.com"
 
