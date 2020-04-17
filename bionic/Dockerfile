@@ -24,3 +24,8 @@ USER ubuntu
 
 #CMD ["/bin/bash"]
 CMD ["/usr/sbin/sshd -D $SSHD_OPTS"]
+#debug1: sshd version OpenSSH_7.6, OpenSSL 1.0.2n  7 Dec 2017
+#debug1: private host key #0: ssh-rsa SHA256:K7+Gp7WQlKnKkBali/BAbeW+nSZTnXtr5vtATnt9z9g
+#debug1: private host key #1: ecdsa-sha2-nistp256 SHA256:uGQAB+NSkh+Btbc+r+zYF0CJYBG184RuVdQgLQb3sC4
+#debug1: private host key #2: ssh-ed25519 SHA256:pIL5lzzt4do7H1gTrj1BcwEXTPsikhz2gLJIJYCgkHc
+#Missing privilege separation directory: /run/sshd
