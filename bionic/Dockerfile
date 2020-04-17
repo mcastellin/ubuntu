@@ -11,6 +11,7 @@ RUN apt-get update &&\
         vim \
         less \
         locate \
+        openssh-server \
         &&\
         rm -rf /var/lib/apt/lists/*
 
@@ -21,4 +22,5 @@ RUN mkdir /home/ubuntu &&\
 
 USER ubuntu
 
-CMD ["/bin/bash"]
+#CMD ["/bin/bash"]
+CMD ["/usr/sbin/sshd -D $SSHD_OPTS"]
