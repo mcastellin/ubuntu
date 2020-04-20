@@ -3,8 +3,9 @@ FROM ubuntu:18.04
 LABEL maintainer="manuel@castellinconsulting.com"
 
 # Install useful tools
+# hadolint ignore=DL3008
 RUN apt-get update &&\
-        apt-get install -y \
+        apt-get install -y --no-install-recommends \
         man \
         info \
         vim \
