@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Tagging image ${IMAGE_NAME} as '16.04'..."
+docker tag $IMAGE_NAME $DOCKER_REPO:latest
+docker push $DOCKER_REPO:18.04
