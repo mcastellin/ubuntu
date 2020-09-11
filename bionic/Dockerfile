@@ -11,8 +11,11 @@ RUN apt-get update &&\
         vim \
         less \
         locate \
-        &&\
-        rm -rf /var/lib/apt/lists/*
+        dnsutils \
+        iputils-ping \
+        telnet \
+        netcat \
+        && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /home/ubuntu &&\
         groupadd -r ubuntu -g 999 &&\
